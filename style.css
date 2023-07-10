@@ -1,0 +1,443 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'IBM Plex Sans', sans-serif;
+}
+
+ #landing_page{
+     background: #171d25;
+     height: 100%;
+     width: 100%;
+     height: 33vh;
+}
+ .container{
+     width: 65%;
+     padding-top:5%;
+     margin: auto;
+     overflow: hidden;
+}
+ h1{
+     font-size: 50px;
+     letter-spacing: 10%;
+     font-weight: 400;
+}
+ #landing_page h1{
+     color: #44fdbc;
+     text-align:center;
+     font-weight:300;
+}
+ h3{
+     color: #a0a0a0;
+     font-weight: 200;
+     padding-top: 0%;
+}
+ h5{
+     color:white;
+     font-weight: 100;
+     padding-left: 5%;
+     padding-top: 0%;
+}
+ a{
+     color: black;
+     text-decoration:none;
+     background: linear-gradient(180deg,rgba(255,255,255,0) 50%, rgba(55, 191, 153, 0.6) 40%);
+}
+ .icons{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 20vh;
+     padding-top: 25vh;
+}
+ ul{
+     position: relative;
+     display: flex;
+}
+ ul li{
+     position: relative;
+     list-style: none;
+}
+ ul li a{
+     display: block;
+     width: 70px;
+     height: 70px;
+     background: #171d25;
+     line-height: 83px;
+     text-align: center;
+     margin: 0 10px;
+     border-radius: 100px;
+     box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.07), 3px 3px 3px rgba(0, 0, 0, 0.09);
+     text-decoration:none;
+}
+ ul li a:active{
+     box-shadow: -2px -2px 3px rgba(255, 255, 255, 0.01), 3px 3px 3px rgba(0, 0, 0, 0);
+     transition-duration: 0.2s;
+}
+ ul li a .fa{
+     font-size:40px;
+     color: #555;
+     padding-top: 20%;
+}
+ ul li a:hover .fa{
+     color: #44fdbc;
+     filter: drop-shadow(0 0 2.5px #44fdbc);
+     transition: 0.15s;
+}
+ #name{
+     color: #44fdbc;
+     text-align: center;
+     padding-top: 30vh;
+     font-weight: 300;
+     padding-bottom: 5%;
+}
+ #nav_links{
+     display: flex;
+     align-items: center;
+     justify-content: space-around;
+     margin: auto;
+     max-width: 20%;
+}
+ #nav_links a{
+     position: relative;
+     text-decoration: none;
+     letter-spacing: 0.5px;
+     text-transform: uppercase;
+     color: #a0a0a0;
+     background:none;
+}
+ #nav_links a:after{
+     content: "";
+     position: absolute;
+     background-color: #44fdbc;
+     height: 2px;
+     width: 0;
+     left: 0;
+     bottom: -10px;
+     transition: 0.3s;
+}
+ #nav_links a:hover:after{
+     width:100%;
+}
+ #project_attrs{
+     padding-top: 4%;
+     padding-bottom:7%;
+}
+ #project_attrs p{
+     line-height:25px;
+}
+ #project_attrs li{
+     list-style-type:none;
+     padding-top: 2%;
+     padding-bottom:2%;
+}
+ video{
+     width:90%;
+}
+ #video{
+     text-align:center;
+}
+ #back{
+     text-align:center;
+     padding-top:7%;
+     padding-bottom:5%;
+}
+ .dir{
+     display: flex;
+     align-items: left;
+     max-width: 20%;
+}
+ .dir p, .dir a{
+     background:none;
+     padding-right:2%;
+     color: #a0a0a0;
+}
+ .dir a:hover{
+     color:rgba(55, 191, 153, 0.6);
+}
+ #nav_links a{
+     position: relative;
+     text-decoration: none;
+     letter-spacing: 0.5px;
+     text-transform: uppercase;
+     color: #a0a0a0;
+     background:none;
+}
+ #back a{
+     color:black;
+     background:none;
+     vertical-align:middle;
+}
+ #back img, #back p{
+     max-width:2.5%;
+     display:inline-block;
+     padding-left:0.25%;
+     padding-right:0.25%;
+     vertical-align:middle;
+     height:20px;
+}
+ .grid-container{
+     display:grid;
+     grid-template-columns: 29% 29% 29%;
+     justify-content:space-around;
+     align-content:stretch;
+     height:400%;
+     padding-top:5%;
+     padding-bottom:3%;
+     min-width:800px;
+}
+
+ #halo_link{
+     background-image:url('media/halo_bp.jpg');
+     background-size:240%;
+     background-position: 42% 30%;
+     border-radius: 13px;
+     text-align:center;
+     padding-top:32%;
+     color:white;
+     font-size:30px;
+     font-weight: 500;
+     max-height:300%;
+     position:relative;
+     min-height:260px;
+     margin-bottom:10%;
+}
+
+ #irislab_link{
+     background-image:url('media/irislab_bp.jpg');
+     background-size:240%;
+     background-position: 42% 30%;
+     border-radius: 13px;
+     text-align:center;
+     padding-top:32%;
+     color:white;
+     font-size:30px;
+     font-weight: 500;
+     max-height:300%;
+     position:relative;
+     min-height:260px;
+     margin-bottom:10%;
+}
+
+ #loomo_link{
+     background-image:url('media/loomo_bp.jpg');
+     background-size:240%;
+     background-position: 20% 70%;
+     border-radius: 13px;
+     text-align:center;
+     padding-top:32%;
+     color:white;
+     font-size:30px;
+     font-weight: 500;
+     max-height:300%;
+     position:relative;
+     min-height:260px;
+     vertical-align: middle;
+     margin-bottom:10%;
+}
+
+ #valve_link{
+     background-image:url('media/valve_bp.jpg');
+     background-size:240%;
+     background-position: 22% 30%;
+     border-radius: 13px;
+     text-align:center;
+     padding-top:39%;
+     color:white;
+     font-size:30px;
+     font-weight: 500;
+     max-height:300%;
+     position:relative;
+     min-height:260px;
+     vertical-align: middle;
+     margin-bottom:10%;
+}
+
+ #multitool_link{
+     background-image:url('media/multitool_bp.jpg');
+     background-size:240%;
+     background-position: 20% 70%;
+     border-radius: 13px;
+     text-align:center;
+     padding-top:39%;
+     color:white;
+     font-size:30px;
+     font-weight: 500;
+     max-height:300%;
+     position:relative;
+     min-height:260px;
+     vertical-align: middle;
+     margin-bottom:10%;
+}
+ #about img{
+     width:30%;
+     float:right;
+}
+ #about{
+     box-sizing:border-box;
+     display:flex;
+     justify-content: center;
+     align-items:center;
+     padding-top:15%;
+     padding-bottom:15%;
+}
+ #about p{
+     font-size:130%;
+}
+ .figure{
+     width:45%;
+     border: 1px solid;
+     display:inline;
+}
+ .figs{
+     width:100%;
+     padding-left:8%;
+     margin-top:0.5%;
+}
+ .fig{
+     margin-top:3%;
+}
+ .caption{
+     text-align:center;
+     width: 75%;
+     margin:auto;
+}
+ #multitool_requirement{
+     width:75%;
+     border: 1px solid;
+     display:flex;
+     margin:auto;
+     margin-top:2%;
+}
+ #multitool_hoq{
+     width:75%;
+     border: 1px solid;
+     display:flex;
+     margin:auto;
+     margin-top:2%;
+}
+ #multitool_print{
+     width:75%;
+     border: 1px solid;
+     display:flex;
+     margin:auto;
+     margin-top:2%;
+}
+ #swirl{
+     text-align:center;
+     margin:auto;
+     display:flex;
+     width:20%;
+     margin-top:none;
+     padding-top:-500px;
+}
+ @media (max-width: 1232px) {
+     .container{
+         width: 85%;
+         padding-top:5%;
+         margin: auto;
+    }
+     .grid-container{
+         display:grid;
+         grid-template-columns: 35%;
+         justify-content:space-around;
+         align-content:stretch;
+         height:400%;
+         padding-top:10%;
+         padding-bottom:5%;
+    }
+     #halo_link{
+         background-image:url('media/halo_bp.jpg');
+         background-size:240%;
+         background-position: 42% 30%;
+         border-radius: 13px;
+         text-align:center;
+         padding-top:28%;
+         color:white;
+         font-size:30px;
+         font-weight: 500;
+         max-height:300%;
+         position:relative;
+         min-height:260px;
+         margin-bottom:10%;
+    }
+     #loomo_link{
+         background-image:url('media/loomo_bp.jpg');
+         background-size:240%;
+         background-position: 20% 70%;
+         border-radius: 13px;
+         text-align:center;
+         padding-top:22%;
+         color:white;
+         font-size:30px;
+         font-weight: 500;
+         max-height:300%;
+         position:relative;
+         min-height:260px;
+         vertical-align: middle;
+         margin-bottom:10%;
+    }
+     #valve_link{
+         background-image:url('media/valve_bp.jpg');
+         background-size:240%;
+         background-position: 22% 30%;
+         border-radius: 13px;
+         text-align:center;
+         padding-top:30%;
+         color:white;
+         font-size:30px;
+         font-weight: 500;
+         max-height:300%;
+         position:relative;
+         min-height:260px;
+         vertical-align: middle;
+         margin-bottom:10%;
+    }
+
+     #multitool_link{
+         background-image:url('media/multitool_bp.jpg');
+         background-size:240%;
+         background-position: 20% 70%;
+         border-radius: 13px;
+         text-align:center;
+         padding-top:30%;
+         color:white;
+         font-size:30px;
+         font-weight: 500;
+         max-height:300%;
+         position:relative;
+         min-height:260px;
+         vertical-align: middle;
+         margin-bottom:10%;
+    }
+
+    #nav_links{
+        max-width: 25%;
+	font-size:15px;
+    }   
+
+    h1, .dir a{
+	    text-align:center;
+	    dispay:inline;
+	    align-items:center;
+	    margin:auto;
+    }
+
+    .dir{
+	    text-align:center;
+	    margin:auto;
+	    padding-left:2.2%;
+    }
+
+
+    .container{
+	    width:90%;
+    }
+
+@media (max-width:800px) {
+    #nav_links{
+        max-width: 40%;
+    }   
+
+
+ }
