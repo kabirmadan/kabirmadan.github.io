@@ -203,6 +203,22 @@
      margin-bottom:10%;
 }
 
+ #frisbee_link{
+     background-image:url('media/frisbee_bp.jpg');
+     background-size:240%;
+     background-position: 42% 30%;
+     border-radius: 13px;
+     text-align:center;
+     padding-top:39%;
+     color:white;
+     font-size:30px;
+     font-weight: 500;
+     max-height:300%;
+     position:relative;
+     min-height:260px;
+     margin-bottom:10%;
+}
+
  #irislab_link{
      background-image:url('media/irislab_bp.jpg');
      background-size:240%;
@@ -323,6 +339,19 @@
      margin:auto;
      margin-top:2%;
 }
+
+
+
+
+ #frisbee_decisionmatrix, #frisbee_tablemount, #frisbee_bb, #frisbee_assemblyexploded, #frisbee_full1, #frisbee_full2, #frisbee_prototype1, #frisbee_prototype2{
+     width:55%;
+     border: 1px solid;
+     display:flex;
+     margin:auto;
+     margin-top:2%;
+}
+
+
  #swirl{
      text-align:center;
      margin:auto;
