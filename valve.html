@@ -1,60 +1,54 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Gate Valve</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class='dir'>
-        <p>
-          <a href='index.html'>home</a>
-        </p>
-        <p>|</p>
-        <p>
-          <a href='about.html'>about</a>
-        </p>
-        <p>|</p>
-        <p>
-          <a href='projects.html'>projects</a>
-        </p>
+   <head>
+      <meta charset="utf-8">
+      <title>Gate Valve</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="menu">
+            <ul>
+               <li><a href="index.html">home</a></li>
+               <li><a href="about.html">about</a></li>
+               <li><a href="projects.html">projects</a></li>
+            </ul>
+         </div>
+         <h1 id="title">Gate Valve Project</h1>
+         <section id='project_attrs'>
+            <li>
+               <h4>Category:</h4>
+               <p>Coursework</p>
+            <li>
+               <h4>Course:</h4>
+               <p>Engineering Design (EG 10117)</p>
+            <li>
+               <h4>Team Size:</h4>
+               <p>4 (myself and three peers)
+               <p>
+            <li>
+               <h4>Skills:</h4>
+               <p>CAD (SolidWorks); Engineering drawings</p>
+            <li>
+               <h4>Description:</h4>
+               <p>For the final project in this course, we were tasked with designing a valve for the <a href='https://green.nd.edu/'>Office of Sustainability at Notre Dame</a>. The purpose of the valve was to control a water tank’s flow and to activate in response to readings of soil moisture levels. <br>
+                  <br> We were given explicit dimension requirements which our valve had to meet in order to comply with the dimensions of the provided testing setup. These included the width between the base’s screw holes and the spacing of the gear teeth. <br>
+                  <br> We brainstormed various implementations of several different valve types, including screw, iris, butterfly, ball, and gate valves designs. <b>We concluded that the gate valve was the best option due to its simplicity, reliability, and waste-minimizing design</b>. We used a sliding <b>rack and pinion</b> design to align and misalign the opening in the gate with the flow of water (i.e. “open” and “close” the valve). We used SolidWorks to create prototypes of the valve. We 3D printed using an FDM printer. <br>
+                  <br>We went through several design iterations and rounds of testing to minimize leaks and optimize usage of print material. The final design is shown below.
+               </p>
+            </li>
+            <div class='figs'>
+               <img class='figure' src='media/valve_body.jpg'>
+               <img class='figure' src='media/valve_rail.jpg'>
+            </div>
+            <p class='caption'>Drawings of the final design of the gate valve. The model of the main body as shown is half of the main body; this part was printed twice, as two identical halves. The sliding rack is  enclosed between them.</p>
+            <p>
+               <br>Our valve was among the best performing in the entire section, leaking only 6.3 mL of the 1000 mL passed through it. The mean leakage value for in the class was 26.11 mL.
+            </p>
+         </section>
       </div>
-      <h1 id="title">Gate Valve Project</h1>
-      <section id='project_attrs'>
-        <li>
-          <h4>Category:</h4>
-          <p>Coursework</p>
-        <li>
-          <h4>Course:</h4>
-          <p>Engineering Design (EG 10117)</p>
-        <li>
-          <h4>Team Size:</h4>
-          <p>4 (myself and three peers)
-          <p>
-        <li>
-          <h4>Skills:</h4>
-          <p>CAD (SolidWorks); Engineering drawings</p>
-        <li>
-          <h4>Description:</h4>
-          <p>For the final project in this course, we were tasked with designing a valve for the <a href='https://green.nd.edu/'>Office of Sustainability at Notre Dame</a>. The purpose of the valve was to control a water tank’s flow and to activate in response to readings of soil moisture levels. <br>
-            <br> We were given explicit dimension requirements which our valve had to meet in order to comply with the dimensions of the provided testing setup. These included the width between the base’s screw holes and the spacing of the gear teeth. <br>
-            <br> We brainstormed various implementations of several different valve types, including screw, iris, butterfly, ball, and gate valves designs. <b>We concluded that the gate valve was the best option due to its simplicity, reliability, and waste-minimizing design</b>. We used a sliding <b>rack and pinion</b> design to align and misalign the opening in the gate with the flow of water (i.e. “open” and “close” the valve). We used SolidWorks to create prototypes of the valve. We 3D printed using an FDM printer. <br>
-            <br>We went through several design iterations and rounds of testing to minimize leaks and optimize usage of print material. The final design is shown below.
-          </p>
-        </li>
-        <div class='figs'>
-          <img class='figure' src='media/valve_body.jpg'>
-          <img class='figure' src='media/valve_rail.jpg'>
-        </div>
-        <p class='caption'>Drawings of the final design of the gate valve. The model of the main body as shown is half of the main body; this part was printed twice, as two identical halves. The sliding rack is  enclosed between them.</p>
-        <p>
-          <br>Our valve was among the best performing in the entire section, leaking only 6.3 mL of the 1000 mL passed through it. The mean leakage value for in the class was 26.11 mL.
-        </p>
-      </section>
-    </div>
-    </div>
-  </body>
+      </div>
+   </body>
 </html>

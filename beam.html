@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Beam Design Challenge</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="menu">
+            <ul>
+               <li><a href="index.html">home</a></li>
+               <li><a href="about.html">about</a></li>
+               <li><a href="projects.html">projects</a></li>
+            </ul>
+         </div>
+         <h1 id="title">Beam Design Challenge</h1>
+         <section id='project_attrs'>
+            <li>
+               <h4>Category:</h4>
+               <p>Coursework</p>
+            <li>
+               <h4>Course:</h4>
+               <p>Aerospace & Mechanical Engineering Lab II (AME 20217)</p>
+            <li>
+               <h4>Team Size:</h4>
+               <p>2 (myself and one peer)</p>
+            <li>
+               <h4>Skills:</h4>
+               <p>CAD (SolidWorks); Engineering drawings; Physical Prototyping</p>
+            <li>
+               <h4>Description:</h4>
+               <p>The main project in this course was a challenge to build a beam capable of supporting the maximum possible load in a <a href="https://en.wikipedia.org/wiki/Three-point_flexural_test#/media/File:Three_point_flexural_test.jpg">three-point flexural bending test</a>. All parts of the project (brainstorming, design, CAD, and construction) were done evenly by my partner and I. We agreed to base our design on a standard I-beam due to its ‘tried and tested’ realability and its status as the industry standard for structural beams.</p>
+               <br>
+               <p>We were provided with a single 10x40x0.19” sheet of foam board and four glue sticks for construction.</p>
+               <br>
+               <p>One of the most significant design challenges was the constraint placed on the amount of material that could be used in the construction of the beam. Once an I-beam-based design was agreed upon, the challenge quickly became about figuring out how to optimize the given material for strength. Using the general formula for <a href="https://en.wikipedia.org/w/index.php?title=Flexural_strength#Measuring_flexural_strength">flexural bending stress</a>, and recognizing the fact that the applied moment and height above the neutral axis cannot be controlled in this experiment, the best way to minimize bending stress is by maximizing the area moment of inertia (denoted <b><i>I</i></b> ). The height term has the greatest impact on maximizing <b><i>I</i></b>  and thus minimizing the bending stress, 𝜎, for a given force. <b><i>I</i></b> was computed for various flange width and stem height combinations, where each attempt was constrained by the dimensions of the foam board, in order to ensure that the entire width of the foam board was being used (10 inches continuous width of material available). The dimensions which yielded the highest <b><i>I</i></b> were used to cut the board into three pieces (vertical stem and two flanges). 70 square inches of excess material remained which could be used for additional supports. To aid with the placement of these supports, shear-force and bending-moment diagrams were constructed for the given 3-point loading configuration.</p>
+               <br><br>
+               <div class='fig'>
+                  <img id='beam_sf' src='media/beam_sf.jpg'>
+               </div>
+               <p class='caption'>Shear force diagram for a beam undergoing 3-point bending. The x-axis represents the length spanned by the beam (0-33 inches), and the y-axis is the magnitude of the shear force experienced by the beam assuming a load of 100 lbf being applied in the center.</p>
+               <div class='fig'>
+                  <img id='beam_bm' src='media/beam_bm.jpg'>
+               </div>
+               <p class='caption'>Bending moment diagram for a beam undergoing 3-point bending. Again, we assume a 100 lbf load.</p>
+               <p><br><br>The plots clearly indicate that the maximum support is needed towards the center of the beam, near where the load is applied. Given the remaining material, fourteen vertical 0.5x6x0.19 inch supports were cut to match the height of the I-beam; on each side of the beam, five supports were concentrated in the middle (due to local structural stress evident in the bending moment diagram), and one was placed halfway to each end of the beam for additional torsional support at these points. A drawing of the CAD model for the initial design is shown below.</p>
+               <br>
+               <div class='fig'>
+                  <img id='beam_1' src='media/beam_1.jpg'>
+               </div>
+               <p class='caption'>Initial design of the beam. The unused material was used to create two horizontal layers of padding to cushion and distribute the pressure applied by the downward loading. This padding is seen in middle of the topmost face.</p>
+               <br><br>
+               <p>This design was then produced, using exacto knives to cut sections out of the foam board and hot glue to secure components together (strictly enforced as the only permitted materials in the challenge...). My partner and I thought we came up with an innovative way to strengthen the construction, which was by cutting grooves and slots into surfaces to allow components to 'puzzle fit' into one another, rather than relying solely on the glue to adhere two flat surfaces together. With our method, the structure (in theory) would become stronger as force was applied to it, due to the fact that the applied force effectively embeds the components deeper inside one another rather than shearing them against one another. In reality, the nature of the the foam board meant that even slight imperfections in the grooves (e.g. contact points being even a few degrees off from perfect perpendicularity) severely weakened those points of the structure and made it prone to lateral torsional buckling (LTB).</p>
+               <div class='figs'>
+                  <img class='figure' src='media/beam_1_setup.jpg'>
+                  <img class='figure' src='media/beam_1_fail.jpg'>
+               </div>
+               <p class='caption'>The constructed beam was placed in a three-point bending test setup as shown on the left. It successfully supported a load of <b>97.6 lbf</b> before failing due to LTB as seen on the right.</p>
+               <br><br>
+               <p>This failure mode had not been anticipated for in the original design; all design focus had been on bolstering structural support around the middle region. The grooves cut in the flange and stem panels contributed to the beam failing in LTB, as they unintentionally caused beam to twist unpredictably. To address this issue, the major design changes made to the beam for the second iteration were (1) no grooves were carved in the plates and (2) gussets of varying sizes were added along the length of the beam to act as braces/supports and discourage (or at least delay) failure through LTB as it occurred in the initial trial. This was accomplished by reallocating some the of material used on flat-lying plates on the top of the beam; these plates were made smaller, and the leftover material was cut into gussets.</p>
+               <div class='fig'>
+                  <img id='beam_2' src='media/beam_2.jpg'>
+               </div>
+               <p class='caption'>A drawing of the revised beam design. The main strut supports are still present but gussets have been added to provide support against LTB.</p>
+               <br><br>
+               <p>This design was once again produced and tested. It was subjected to the same exact loading as the first test.</p>
+               <br><br>
+               <div class='figs'>
+                  <img class='figure' src='media/beam_2_setup.jpg'>
+                  <img class='figure' src='media/beam_2_fail.jpg'>
+               </div>
+               <p class='caption'>The revised prototype of the beam, shown before and after being subjected to significant loading. LTB is clearly visible as the beam twists about its lateral axis. This version of the beam was able to support a load of <b>123.0 lbf</b> (a 26% increase in load bearing ability from the original prototype) before experiencing failure.</p>
+               <br><br>
+               <p>The beam still failed in LTB, though it should be noted that the gussets certainly functioned as expected; they kept the connections between the stem & flange plates almost perfectly perpendicular (contrast to what was seen in the first test). As such, when the beam failed in the second trial, it was due to the material in the vertical stem plate “wrinkling”, rather than the plate connections being twisted.</p>
+               <br><br>
+               <div class='fig'>
+                  <img id='beams' src='media/beams.jpg'>
+               </div>
+               <p class='caption'>Overall performance of both beams. Uses displacement data from a magnetic transducer and load data from a load cell.</p>
+         </section>
+      </div>
+      </div>
+   </body>
+</html>

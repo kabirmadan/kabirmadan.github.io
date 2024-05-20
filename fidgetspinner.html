@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Fidget Spinner Mini-Project</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="menu">
+            <ul>
+               <li><a href="index.html">home</a></li>
+               <li><a href="about.html">about</a></li>
+               <li><a href="projects.html">projects</a></li>
+            </ul>
+         </div>
+         <h1 id="title">Fidget Spinner Mini-Project</h1>
+         <section id='project_attrs'>
+            <li>
+               <h4>Category:</h4>
+               <p>Coursework</p>
+            <li>
+               <h4>Course:</h4>
+               <p>Design Tools II (AME 21268)</p>
+            <li>
+               <h4>Team Size:</h4>
+               <p>1 (myself) </p>
+            <li>
+               <h4>Skills:</h4>
+               <p>CAD (SolidWorks); CAM (SolidWorks); Engineering drawings; Physical prototyping;</p>
+            <li>
+               <h4>Description:</h4>
+               <p>The goal of this project was to get hands-on experience with <b>computer aided manufacturing (CAM)</b>. I was provided by my professor with 0.25” HDPE stock, a single 0.35” deep bearing, 1/4-20 hex nuts for weights, and plastic finger pads; given these materials, I was tasked with designing and manufacturing a fidget spinner.<br>
+                  <br>It is important to consider what the desired behavior of a fidget spinner looks like — high rotational speed, long spin duration, or a unique artistic design are some of the possible directions which can inform the design of such a device. I decided that it was important that my device be optimized for rotational speed. As such, it was deemed necessary that the device have a very small mass moment of inertia, allowing the fidget spinner to achieve an high angular velocity. As such, my design was motivated by the idea of concentrating a large amount of mass very close to the center of rotation. To achieve this, I decided to place six ‘weights’ (steel nuts) in a ring immediately surrounding the finger pads. For geometric consistency, the outer shell of the device was also designed to be hexagonal, in order to match the hexagonal array of hexagonal weights.<br>
+                  <br>I created a model based on this idea, with holes toleranced to allow the steel weighting nuts to be <b>press-fit</b> into their holes. I added additional circular holes near the outer edge of the fidget spinner to shift the weight distribution to be concentrated even nearer to the center hole.</p>
+               <div class='fig'>
+                  <img id='figdetspinner_finaldrawing' src='media/figdetspinner_finaldrawing.jpg'>
+               </div>
+               <p class='caption'>Drawing showing an exploded view of the entire assembly.</p>
+		  <p><br>Once the model was finalized, I specified the milling operations (just <b>open pockets</b> and a <b>perimeter</b> feature for this part) and generated the tool paths.
+               </p>
+               <div class='fig'>
+                  <img id='figdetspinner_cam' src='media/figdetspinner_cam.gif'>
+               </div>
+               <p class='caption'>Tool path simulation.</p>
+               <p></br>Once I was satisfied with the tool paths, I generated the <b>G-code</b> and set the procedure to run on a <a href='https://www.haascnc.com/machines/desktop-machines/desktop-mill.html'>Haas desktop mill</a>. The final result is seen below.
+               <div class='fig'>
+                  <img id='figdetspinner_final' src='media/figdetspinner_final.jpg'>
+               </div>
+               <p class='caption'>The result of the milled part with all components installed. Note that the outer holes were properly deburred after this photo was taken.</p>
+         </section>
+      </div>
+      </div>
+   </body>
+</html>

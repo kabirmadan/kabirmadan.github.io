@@ -1,80 +1,63 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Multitool</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
-  </head>
-  <body>
-    <div class="container">
-      <div class='dir'>
-        <p>
-          <a href='index.html'>home</a>
-        </p>
-        <p>|</p>
-        <p>
-          <a href='about.html'>about</a>
-        </p>
-        <p>|</p>
-        <p>
-          <a href='projects.html'>projects</a>
-        </p>
+   <head>
+      <meta charset="utf-8">
+      <title>Multitool</title>
+      <link rel="stylesheet" href="style.css">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+   </head>
+   <body>
+      <div class="container">
+         <div class="menu">
+            <ul>
+               <li><a href="index.html">home</a></li>
+               <li><a href="about.html">about</a></li>
+               <li><a href="projects.html">projects</a></li>
+            </ul>
+         </div>
+         <h1 id="title">Multitool Project</h1>
+         <section id='project_attrs'>
+            <li>
+               <h4>Category:</h4>
+               <p>Coursework</p>
+            <li>
+               <h4>Course:</h4>
+               <p>Introduction to Design Thinking in Engineering (EG 20210)</p>
+            <li>
+               <h4>Team Size:</h4>
+               <p>3 (myself and two peers)
+               <p>
+            <li>
+               <h4>Skills:</h4>
+               <p>CAD (SolidWorks); Engineering drawings</p>
+            <li>
+               <h4>Description:</h4>
+               <p>For the final project in this course, we were tasked with designing a multitool device which could interface with a variety of screws and bolts, as well as their corresponding nuts, as shown below.</p>
+               <div class='fig'>
+                  <img id='multitool_requirement' src='media/multitool_requirement.jpg'>
+               </div>
+               <p class='caption'>The wooden block used to test the versatility of the multitool.</p>
+               <p>
+                  </br>After identifying engineering and customer requirements, we generated a <b>house of quality (HOQ)</b> to understand interdependencies of design specifications. This information was essential to ensuring our brainstorming and design process remained focused and deliberate. 
+               </p>
+               <div class='fig'>
+                  <img id='multitool_hoq' src='media/multitool_hoq.jpg'>
+               </div>
+               <p class='caption'>The HOQ was used to ensure engineering design decisions were made with both form and function in mind.</p>
+               <p>
+                  <br>We brainstormed several different designs, and eventually settled on the one shown below.
+               </p>
+               <div class='fig'>
+                  <img id='multitool_print' src='media/multitool_print.jpg'>
+               </div>
+               <p class='caption'>The design shown features the main body, a wrench, a bit extender, and the six bits required for the six different screws and bolts. Each of the bits can be slotted into the notch seen on the top of the main body.</p>
+               <p>
+                  <br>This design was selected mainly due to its <b>modular design</b>, which prevents wastage of print filament and minimizes the overall print time. One of the most important design features is that all of the interchangeable bits can be stored inside the holds along the sides of the part’s main body; this was how we decided to address the requirement of self-containment. This enables a highly compact and functional design. <br>
+                  <br>
+               </p>
+         </section>
       </div>
-      <h1 id="title">Multitool Project</h1>
-      <section id='project_attrs'>
-        <li>
-          <h4>Category:</h4>
-          <p>Coursework</p>
-        <li>
-          <h4>Course:</h4>
-          <p>Introduction to Design Thinking in Engineering (EG 20210)</p>
-        <li>
-          <h4>Team Size:</h4>
-          <p>3 (myself and two peers)
-          <p>
-        <li>
-          <h4>Skills:</h4>
-          <p>CAD (SolidWorks); Engineering drawings</p>
-        <li>
-          <h4>Description:</h4>
-          <p>For the final project in this course, we were tasked with designing a multitool device which could interface with a variety of screws and bolts, as well as their corresponding nuts, as shown below.</p>
-          <div class='fig'>
-            <img id='multitool_requirement' src='media/multitool_requirement.jpg'>
-          </div>
-          <p class='caption'>The wooden block used to test the versatility of the multitool.</p>
-          <img id='swirl' src='assets/swirl.svg'>
-          <p>
-            </br>After identifying engineering and customer requirements, we generated a <b>house of quality (HOQ)</b> to understand interdependencies of design specifications. This information was essential to ensuring our brainstorming and design process remained focused and deliberate. </p>
-          <div class='fig'>
-            <img id='multitool_hoq' src='media/multitool_hoq.jpg'>
-          </div>
-          <p class='caption'>The HOQ was used to ensure engineering design decisions were made with both form and function in mind.</p>
-          <img id='swirl' src='assets/swirl.svg'>
-          <p>
-            <br>We brainstormed several different designs, and eventually settled on the one shown below.
-          </p>
-          <div class='fig'>
-            <img id='multitool_print' src='media/multitool_print.jpg'>
-          </div>
-          <p class='caption'>The design shown features the main body, a wrench, a bit extender, and the six bits required for the six different screws and bolts. Each of the bits can be slotted into the notch seen on the top of the main body.</p>
-          <img id='swirl' src='assets/swirl.svg'>
-          <p>
-            <br>This design was selected mainly due to its <b>modular design</b>, which prevents wastage of print filament and minimizes the overall print time. One of the most important design features is that all of the interchangeable bits can be stored inside the holds along the sides of the part’s main body; this was how we decided to address the requirement of self-containment. This enables a highly compact and functional design. <br>
-            <br>
-          </p>
-          <p>Each part was modeled using SolidWorks and 3D printed using an FDM printer. Drawings of two of the parts (main body and wrench) are shown below to demonstrate dimensions and important features. <br>
-            <br>
-          </p>
-          <div class='figs'>
-            <img class='figure' src='media/multitool_body.jpg'>
-            <img class='figure' src='media/multitool_wrench.jpg'>
-          </div>
-          <p class='caption'>Engineering drawings were made for all nine printed parts.
-          <p>
-      </section>
-    </div>
-    </div>
-  </body>
+      </div>
+   </body>
 </html>
