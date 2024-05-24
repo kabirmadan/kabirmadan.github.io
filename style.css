@@ -31,7 +31,6 @@ body {
 	font-weight: 600;
 	border-radius: 30px;
 	color: white;
-	padding: 20px;
 }
 
 .cell-1 {
@@ -196,6 +195,10 @@ ul li a:hover .fa {
 	line-height: 25px;
 }
 
+#project_attrs h4 {
+	font-size: 24px;	
+}
+
 #project_attrs li {
 	list-style-type: none;
 	padding-top: 2%;
@@ -279,8 +282,10 @@ video {
 
 .caption {
 	text-align: center;
-	width: 75%;
+	width: 45%;
 	margin: auto;
+	color: #7A7A7A;
+	font-style: italic;
 }
 
 #multitool_requirement,
@@ -370,8 +375,9 @@ align: center;
 	text-align: center;
 	box-shadow: none;
 	color: #a0a0a0;
+	font-weight: 400;
 	text-decoration: none;
-	font-size: 20px;
+	font-size: 25px;
 }
 
 
@@ -406,7 +412,7 @@ align: center;
 }
 
 
-@media (max-width: 1232px) {
+@media (max-width: 1024px) {
 	.container {
 		width: 85%;
 		padding-top: 5%;
@@ -490,7 +496,7 @@ align: center;
 		box-shadow: none;
 		color: #a0a0a0;
 		text-decoration: none;
-		font-size: 50px;
+		font-size: 40px;
 	}
 
 
