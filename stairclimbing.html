@@ -6,6 +6,10 @@
       <link rel="stylesheet" href="style.css">
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
       <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+      <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16x16.png">
+      <link rel="manifest" href="assets/site.webmanifest">
    </head>
    <body>
       <div class="container">
@@ -18,6 +22,15 @@
          </div>
          <h1 id="title">Stair Climbing Robot</h1>
          <section id='project_attrs'>
+	    <li>
+	    	<h4>Summary:</h4>
+		<p>As part of a small team, I designed a robot which climbs stairs and delivers a small payload held in a wirelessly operable box enclosure.</p>
+            <li>
+               <h4>Skills:</h4>
+               <p>CAD (SolidWorks); Motion analysis (SolidWorks); Mechanism design; Engineering drawings; Physical prototyping; Workshop skills</p>
+            <li>
+               <h4>Team Size:</h4>
+               <p>4 (myself and three peers)</p>
             <li>
                <h4>Category:</h4>
                <p>Coursework</p>
@@ -25,13 +38,7 @@
                <h4>Course:</h4>
                <p>Design Tools II (AME 21268)</p>
             <li>
-               <h4>Team Size:</h4>
-               <p>4 (myself and three peers)</p>
-            <li>
-               <h4>Skills:</h4>
-               <p>CAD (SolidWorks); Motion analysis (SolidWorks); Mechanism design; Engineering drawings; Physical prototyping; Workshop skills</p>
-            <li>
-               <h4>Description:</h4>
+               <h4>In-Depth Breakdown:</h4>
                <p>For the final project in this course, we were challenged to build a stair-climbing robot which would be capable of carrying a payload of two 7.5oz (mini) soda cans up the stairs with minimal disturbance or shaking of the cargo. It was explicitly specified that the soda container needed to be remotely openable and closable via a servo-actuated mechanism.<br>
                   <br>Each subassembly of the final robot assembly was led by one team member, with the rest of the group providing feedback about the design as well as helping hands-on with the manufacturing and assembly of the individual components. As such, <b>I was personally responsible for the design and manufacturing of the soda box</b>.<br>
                   <br>For the design of the drivebase, we started by brainstorming a few several possible designs. Each member submitted a rough sketch of their idea, and the team evaluated them together, taking note of design features that could potentially be included in the final design. Two of the most popular design ideas are shown below.
@@ -45,9 +52,13 @@
                </div>
                <p class='caption'>An initial drawing of the semi-circle wheel design.</p>
                <p></br>We evaluated the strengths and weaknesses of each based on previous implementations of each design (eg. <a href='https://www.youtube.com/watch?v=eB4nj6NUKVE'>Seoul National University’s rapid stair climbing build</a> and <a href='https://www.youtube.com/watch?v=46qEgN3eqkA'>a senior design project from Trine University</a>), and ultimately decided that the four-wheeled semicircle approach offers the most linear motion.</p>
-               <p><br>We then constructed a simplified model of the robot (with approximately semi-circular wheels) and staircase environment, and conducted motion analysis of three different motors: a <a href='https://www.servocity.com/20-rpm-precision-spur-gear-motor/'>20 RPM</a>, <a href='https://www.gobilda.com/5203-series-yellow-jacket-planetary-gear-motor-188-1-ratio-24mm-length-8mm-rex-shaft-30-rpm-3-3-5v-encoder/'>30 RPM</a>, and <a href='https://www.servocity.com/content/downloads/45_rpm_hd_precision_planetary_gearmotor_-_specifications.pdf'>45 RPM</a>. The 30 RPM motor (planetary gearbox with 188:1 gear ratio) was the only one of the three tested motors which provided the torque necessary to overcome the height of each stair, so we opted to use it to drive our belt and pulley power transmission system. This high gear ratio means high torque at the expense of RPM — a necessary tradeoff for this particular application.<br></p>
+               <p><br>We then constructed a simplified model of the robot (with approximately semi-circular wheels) and staircase environment, and conducted motion analysis of three different motors: a <a href='https://www.servocity.com/20-rpm-precision-spur-gear-motor/'>20 RPM</a>, <a href='https://www.gobilda.com/5203-series-yellow-jacket-planetary-gear-motor-188-1-ratio-24mm-length-8mm-rex-shaft-30-rpm-3-3-5v-encoder/'>30 RPM</a>, and <a href='https://www.servocity.com/content/downloads/45_rpm_hd_precision_planetary_gearmotor_-_specifications.pdf'>45 RPM</a>. The 30 RPM motor (planetary gearbox with 188:1 gear ratio) was the only one of the three tested motors which provided the torque necessary to overcome the height of each stair, so we opted to use it to drive our belt and pulley power transmission system. This high gear ratio means high torque at the expense of RPM — a necessary tradeoff for this particular application.<br><br></p>
+               <div class='fig'>
+                  <img id='stairclimbing_motion' src='media/stairclimbing_motion.gif'>
+               </div>
+               <p class='caption'>Motion analysis of the 30 RPM motor configuration. Note that the wheel geometry used here was still in its early design phase.</p>
                <br><br>
-               <p>As for the wheel design, measurements of the stairs dictated that the arc length of each semicircle of the wheel needed to be approximately 311 mm to maximize wheel contact with each step of the stair. Motion analysis proved that the arc length of the wheel needed to be approximately 327 mm to minimize the motion of the robot in the y-direction, thereby creating the most linear and stable path of travel. The wheel geometry went through numerous design iterations, and eventually evolved into a shape defined by a parametric curve of changing radius, allowing the wheel to seamlessly roll over the stairs when placed in the correct starting position. The final drawing of the wheel is shown below.</p>
+               <p>As for the evolution of the wheel design, measurements of the stairs dictated that the arc length of each semicircle of the wheel needed to be approximately 311 mm to maximize wheel contact with each step of the stair. Motion analysis proved that the arc length of the wheel needed to be approximately 327 mm to minimize the motion of the robot in the y-direction, thereby creating the most linear and stable path of travel. The wheel geometry went through numerous design iterations, and eventually evolved into a shape defined by a parametric curve of changing radius, allowing the wheel to seamlessly roll over the stairs when placed in the correct starting position. The final drawing of the wheel is shown below.</p>
                <div class='fig'>
                   <img id='stairclimbing_wheel' src='media/stairclimbing_wheel.jpg'>
                </div>
