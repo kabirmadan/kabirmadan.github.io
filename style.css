@@ -452,11 +452,11 @@ align: center;
 
 	#about p {
 		font-size: 170%;
-		margin-top: 3em;
+		margin-top: 2.5em;
 	}
 
 	#about img {
-		max-width: 35%;
+		min-width: 17vh;
 	}
 
 	#nav_links {
