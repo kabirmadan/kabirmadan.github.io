@@ -493,6 +493,8 @@ align: center;
 
 	.menu ul {
 		justify-content: center;
+		padding-top: 4vh;
+		padding-bottom: 3vh;
 	}
 
 	.landing_nav ul {
@@ -523,6 +525,58 @@ align: center;
 		text-decoration: none;
 		font-size: 40px;
 	}
+
+	.cell {
+		font-size: 40px;
+	}
+
+	#multitool_requirement,
+#multitool_hoq,
+#multitool_print,
+#frisbee_decisionmatrix,
+#frisbee_tablemount,
+#frisbee_bb,
+#frisbee_assemblyexploded,
+#frisbee_full1,
+#frisbee_full2,
+#frisbee_prototype1,
+#frisbee_prototype2,
+#stairclimbing_sketch1,
+#stairclimbing_sketch2,
+#stairclimbing_motion,
+#stairclimbing_wheel,
+#stairclimbing_drivetrainiso,
+#stairclimbing_drivetrainbottom,
+#stairclimbing_soda1,
+#stairclimbing_soda2,
+#stairclimbing_soda3,
+#stairclimbing_finalexploded,
+#stairclimbing_final,
+#figdetspinner_finaldrawing,
+#figdetspinner_cam,
+#figdetspinner_final,
+#beam_sf,
+#beam_bm,
+#beam_1,
+#beam_2,
+#beams {
+	width: 90%;
+	margin-top: 13%;
+}
+
+
+.caption {
+	width: 75%;
+	padding-top:1%;
+}
+
+
+
+#project_attrs li {
+	list-style-type: none;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
 
 
 }
