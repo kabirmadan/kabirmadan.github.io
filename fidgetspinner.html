@@ -23,40 +23,35 @@
          <h1 id="title">Fidget Spinner Mini-Project</h1>
          <section id='project_attrs'>
             <li>
-               <h4>Summary:</h4>
+               <h4>Summary</h4>
                <p>I individually designed and generated the CNC tool paths for a fidget spinner toy. I then assembled a physical prototype.</p>
             </li>
             <li>
-               <h4>Skills:</h4>
+               <h4>Skills</h4>
                <p>CAD (SolidWorks); CAM (SolidWorks); Engineering drawings; Physical prototyping;</p>
             </li>
             <li>
-               <h4>Team Size:</h4>
+               <h4>Team Size</h4>
                <p>1 (myself) </p>
             </li>
             <li>
-               <h4>Category:</h4>
-               <p>Coursework</p>
+               <h4>Category</h4>
+               <p>Coursework: Design Tools II (AME 21268)</p>
             </li>
             <li>
-               <h4>Course:</h4>
-               <p>Design Tools II (AME 21268)</p>
-            </li>
-            <li>
-               <h4>In-Depth Breakdown:</h4>
+               <h4>In-Depth Breakdown</h4>
                <p>The goal of this project was to get hands-on experience with <b>computer aided manufacturing (CAM)</b>. I was provided by my professor with 0.25” HDPE stock, a single 0.35” deep bearing, 1/4-20 hex nuts for weights, and plastic finger pads; given these materials, I was tasked with designing and manufacturing a fidget spinner.<br>
-                  <br>It is important to consider what the desired behavior of a fidget spinner looks like — high rotational speed, long spin duration, or a unique artistic design are some of the possible directions which can inform the design of such a device. I decided that it was important that my device be optimized for rotational speed. As such, it was deemed necessary that the device have a very small mass moment of inertia, allowing the fidget spinner to achieve an high angular velocity. As such, my design was motivated by the idea of concentrating a large amount of mass very close to the center of rotation. To achieve this, I decided to place six ‘weights’ (steel nuts) in a ring immediately surrounding the finger pads. For geometric consistency, the outer shell of the device was also designed to be hexagonal, in order to match the hexagonal array of hexagonal weights.<br>
+                  <br>It is important to consider what the desired behavior of a fidget spinner looks like — high rotational speed, long spin duration, or a unique artistic design are some of the possible directions which can inform the design of such a device. I decided that it was important that my device be optimized for rotational speed. As such, my design was motivated by the idea of concentrating a large amount of mass very close to the center of rotation so as to create a relatively small mass moment of inertia. To achieve this, I decided to place six ‘weights’ (steel nuts) in a ring immediately surrounding the finger pads. For geometric consistency, the outer shell of the device was also designed to be hexagonal.<br> 
                   <br>I created a model based on this idea, with holes toleranced to allow the steel weighting nuts to be <b>press-fit</b> into their holes. I added additional circular holes near the outer edge of the fidget spinner to shift the weight distribution to be concentrated even nearer to the center hole.</p>
                <div class='fig'>
                   <img id='figdetspinner_finaldrawing' src='media/figdetspinner_finaldrawing.jpg'>
                </div>
                <p class='caption'>Drawing showing an exploded view of the entire assembly.</p>
-               <p><br>Once the model was finalized, I specified the milling operations (just <b>open pockets</b> and a <b>perimeter</b> feature for this part) and generated the tool paths.</p>
+               <p><br>Once the model was finalized, I specified the milling operations (just <b>open pockets</b> and a <b>perimeter</b> feature for this part) and generated the tool paths. Once I was satisfied with these, I generated the <b>G-code</b> and set the procedure to run on a <a href='https://www.haascnc.com/machines/desktop-machines/desktop-mill.html'>Haas desktop mill</a>. The final result is seen below.</p>
                <div class='fig'>
                   <img id='figdetspinner_cam' src='media/figdetspinner_cam.gif'>
                </div>
                <p class='caption'>Tool path simulation.</p>
-               <p></br>Once I was satisfied with the tool paths, I generated the <b>G-code</b> and set the procedure to run on a <a href='https://www.haascnc.com/machines/desktop-machines/desktop-mill.html'>Haas desktop mill</a>. The final result is seen below.
                <div class='fig'>
                   <img id='figdetspinner_final' src='media/figdetspinner_final.jpg'>
                </div>
