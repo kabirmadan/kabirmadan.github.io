@@ -12,6 +12,11 @@ body {
 	height: 100%;
 }
 
+::selection{
+	background-color: #022222;
+	color: white;
+}
+
 
 .grid {
 	background-color: #ECE3D1;
@@ -192,11 +197,12 @@ ul li a:hover .fa {
 }
 
 #project_attrs p {
-	line-height: 25px;
+	line-height: 26px;
+	font-size: 18px;
 }
 
 #project_attrs h4 {
-	font-size: 24px;
+	font-size: 27px;
 }
 
 #project_attrs li {
