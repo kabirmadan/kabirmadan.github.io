@@ -35,7 +35,7 @@
                <h4>Category</h4>
                <p>Coursework: Design Tools II (AME 21268)</p>
             <li>
-               <h4>In-Depth Breakdown</h4>
+               <h4>Detailed Breakdown</h4>
                <p>For the final project in this course, we were challenged to build a stair-climbing robot which would be capable of carrying a payload of two 7.5oz (mini) soda cans with minimal disturbance or shaking of the cargo. One of the stipulations was that the soda container needed to be remotely openable and closable via a servo-actuated mechanism. <b>I was personally responsible for the design and manufacturing of this soda box</b>. As for the design of the drivebase, we started by brainstorming a few several possible designs; two early design ideas are shown below.<br>
                </p>
                <div class='fig'>
@@ -53,14 +53,14 @@
                </div>
                <p class='caption'>Motion analysis of the 30 RPM motor configuration. Note that the wheel geometry used here was still in its early design phase.</p>
                <br><br>
-               <p>As for the evolution of the wheel design, measurements of the stairs dictated that the arc length of each semicircle of the wheel needed to be approximately 311 mm to maximize wheel contact with each step of the stair. Motion analysis proved that the arc length of the wheel needed to be approximately 327 mm to minimize the motion of the robot in the y-direction, thereby creating the most linear and stable path of travel. The wheel geometry went through numerous design iterations, and eventually evolved into a shape defined by a parametric curve of changing radius, allowing the wheel to seamlessly roll over the stairs when placed in the correct starting position. The final drawing of the wheel is shown below.</p>
+               <p>As for the evolution of the wheel design, we measured the dimensions of a representative staircase and determined that the arc length of each semicircle of the wheel needed to be approximately 311 mm to allow the rolling wheels to maintain full contact with each step. Further motion analysis led us to slightly increase this dimension to 327 mm to minimize the motion of the robot in the y-direction, thereby creating the most linear and stable path of travel. The wheel geometry went through numerous design iterations; we eventually settled on a shape defined by a parametric curve of changing radius to counterbalance the fact that the robot body’s height relative to the stairs naturally oscillated over traversal cycles. The final drawing of the wheel is shown below.</p>
                <div class='fig'>
                   <img id='stairclimbing_wheel' src='media/stairclimbing_wheel.jpg'>
                </div>
                <p class='caption'>The final design of the wheel. Manufactured out of high-density polyethylene (HDPE) via water-jet cutting.</p>
                <br>
                <br> 
-               <p>The drivetrain was designed to directly power both axles directly via a belt and pulley system, in order to ensure that the wheels are always in phase when operating — a key assumption upon which our motion analysis (and therefore wheel design) was based. The subassembly is shown below.</p>
+               <p>We designed the drivetrain to directly power both axles directly via a belt and pulley system, in order to ensure that the wheels are always in phase when operating — a key assumption upon which our motion analysis (and therefore wheel design) was based. The subassembly is shown below.</p>
                <div class='fig'>
                   <img id='stairclimbing_drivetrainiso' src='media/stairclimbing_drivetrainiso.jpg'>
                </div>
@@ -71,22 +71,22 @@
                <p class='caption'>A bottom view of the same subassembly, where the motor is visible. </p>
                <br>
                <br>
-               <p> The soda box was designed to house the cans inside a sock-absorbing foam block, which cushions the soda cans from the minor remaining shaking and bumpiness of the robot body. It operates with a rear-mounted servo, which pulls down the lever arm on the back of the soda box lid to open the container. </p>
+               <p> I designed the soda box to house the cans inside a sock-absorbing foam block, which cushions the soda cans from the minor remaining shaking and bumpiness of the robot body. It operates with a rear-mounted servo, which pulls down the lever arm on the back of the soda box lid to open the container. </p>
                <div class='fig'>
                   <img id='stairclimbing_soda1' src='media/stairclimbing_soda1.jpg'>
                </div>
-               <p class='caption'>A model of the soda box holder lid. The main box is shown as transparent here to allow for visibility of the foam block (gray) and soda cans (cylinders in the foam block). The lid is shown in a half-open position.</p>
+               <p class='caption'>A model of the soda box holder, shown in a half-open position. The main box is shown as transparent here to allow for visibility of the foam block (gray) and soda cans (cylinders in the foam block).</p>
                <div class='fig'>
                   <img id='stairclimbing_soda2' src='media/stairclimbing_soda2.jpg'>
                </div>
-               <p class='caption'>The cans sitting in the shock-absorbing polyurethane padding.</p>
+               <p class='caption'>Soda cans sitting in shock-absorbing polyurethane padding.</p>
                <div class='fig'>
                   <img id='stairclimbing_soda3' src='media/stairclimbing_soda3.jpg'>
                </div>
                <p class='caption'>Drawing of an exploded view of the soda box subassembly.</p>
                <br>
                <br>
-               <p>Once the design of all of the main subassemblies and components was finalized, the robot was assembled in the configuration shown below. Note that the battery and wireless recievers are not included in the model.</p>
+               <p>Once we had finalized the design of all of the main subassemblies and components, we assembled the robot in the configuration shown below. Note that the battery and wireless recievers are not included in the model.</p>
                <div class='fig'>
                   <img id='stairclimbing_finalexploded' src='media/stairclimbing_finalexploded.jpg'>
                </div>
@@ -94,15 +94,13 @@
                <br>
                <br>
                <p>We did not account for the weight of the cargo or battery in the simplified model of the robot used in initial motion analysis. This led to some imbalance issues and “flopping” behavior of the robot during testing of the initial physical prototype. The discrepancy between simulation and actual behavior showed us firsthand the perils of oversimplifying physical systems during simulation  — one of the most valuable lessons I learned through this project.<br> 
-                  <br>Luckily, our motor was powerful enough to supply the torque needed to overcome this added, previously unaccounted-for weight. We did, however, face some issues with the slipperiness of the HDPE wheels, which, under the added weight, had trouble gripping the surface of the stairs, causing the whole robot to slide down the stairs. We addressed the weight distribution problem by repositioning the bulky battery on the body until we were satisfied with the stability of the robot. We addressed the sliding problem by adding a layer of anti-slip rubber tape to the outer rims of the wheels. These two solutions were enough to resolve the stability and grip challenges were were facing.<br>
-                  <br>Our final robot, shown below, performed well. As stipulated in the original challenge statement, on demonstration day, the soda cans were successfully transported up the staircase and were accessed and opened without violent fizzing or exploding.
+                  <br>Luckily, our motor was powerful enough to supply the torque needed to overcome this added, previously unaccounted-for weight. We did, however, face some issues with the slipperiness of the HDPE wheels, which, under the added weight, had trouble gripping the surface of the stairs, causing the whole robot to slide down the stairs. We addressed the weight distribution problem by repositioning the bulky battery on the body until we were satisfied with the stability of the robot. We addressed the sliding problem by adding a layer of anti-slip rubber tape to the outer rims of the wheels. These two solutions were enough to resolve the stability and grip challenges we were facing.<br>
+                  <br>Our final robot, shown below, performed well. As stipulated in the original challenge statement, on demonstration day, the soda cans were successfully transported up the staircase and were accessed and opened without violent fizzing or exploding. I made a short video of the project (just for fun), which you can check out <a href='https://www.youtube.com/watch?v=kcW0CZObqnw'>here</a>.</p>
                </p>
                <div class='fig'>
                   <img id='stairclimbing_final' src='media/stairclimbing_final.jpg'>
                </div>
                <p class='caption'>The final physical prototype.</p>
-               <br><br>
-               <p>I made a short video of the project (just for fun), which you can check out <a href='https://www.youtube.com/watch?v=kcW0CZObqnw'>here</a>.</p>
          </section>
       </div>
       </div>
