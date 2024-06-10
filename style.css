@@ -263,13 +263,13 @@ video {
 
 #about p {
 	font-size: 130%;
-	padding-top:8vh;
+	padding-top:6vh;
 	padding-bottom:8vh;
 	line-height: 30px;
 }
 
 #about img {
-	max-width: 30%;
+	max-width: 310px;
 }
 
 .figure {
