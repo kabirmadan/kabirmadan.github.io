@@ -265,6 +265,7 @@ video {
 	font-size: 130%;
 	padding-top:8vh;
 	padding-bottom:8vh;
+	line-height: 30px;
 }
 
 #about img {
