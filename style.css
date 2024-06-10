@@ -14,7 +14,7 @@ body {
 
 ::selection{
 	background-color: #022222;
-	color: white;
+	color: #ECE3D1;
 }
 
 
@@ -197,7 +197,7 @@ ul li a:hover .fa {
 }
 
 #project_attrs p {
-	line-height: 26px;
+	line-height: 30px;
 	font-size: 18px;
 }
 
