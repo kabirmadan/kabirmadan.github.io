@@ -262,10 +262,10 @@ video {
 }
 
 #about p {
-	font-size: 130%;
-	padding-top:6vh;
-	padding-bottom:8vh;
-	line-height: 30px;
+	font-size: 125%;
+	padding-top:2vh;
+	padding-bottom:5vh;
+	line-height: 27px;
 }
 
 #about img {
